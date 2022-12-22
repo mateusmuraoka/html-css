@@ -13,20 +13,23 @@
             border-collapse: collapse;
             
         }
-       
-        thead > tr > th{
+        thead{
             background-color: gray;
-            border: 1px solid black;
             color: white;
-            width: 100px;
+        }
+        .media-areas{
+            background-color: gray;
+            color: white;
             
+            font-weight: bold;
             
         }
        
-       tbody > tr > td{
-             border: 1px solid black;
-             text-align: center;
-       }
+        th,td{
+            border: 1px solid black;
+            padding:10px
+            
+        }
             
        
     </style>
@@ -49,7 +52,7 @@
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td>00</td>
                 <td>00</td>
@@ -73,11 +76,32 @@
                 <td>00</td>
                 <td>00</td>
             </tr>
+            <tr class="media-areas">
+                <th colspan="4" scope="row">Médias de Exatas</th>
+                <td>00</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
+                <td>História</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <tr class="media-areas">
+                    <th colspan="4" scope="row">Médias de Humanas</th>
+                    <td>00</td>
+            </tr>
 
         </tbody>
-        <tfoot>
-
-        </tfoot>
+        
     </table>
     
 </body>
